@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header .toolbar {
+  display: none;
+}
+header .page-title {
+  background-color: rgb(171, 199, 34);
+  padding: 1rem;
+  color: #fff;
+  font-size: 20px;
+}
+
+.page-container nav {
+  width: 100%;
+}
+.page-container nav .menu-container {
+  background-color: rgb(15, 34, 1);
+  color: #fff;
+  width: 100%;
+}
+.page-container nav .menu-container .menu-title {
+  display: none;
+}
+.page-container nav .menu-container ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+}
+.page-container nav .menu-container ul li {
+  text-align: center;
+  width: 90px;
+  list-style: none;
+  padding: 0.5rem;
+  background-color: antiquewhite;
+  color: black;
+}
+.page-container main {
+  background-color: #bdbbbb;
+  padding: 1rem;
+}
+.page-container main .list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.page-container main .list .card {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.page-container main .list img {
+  border-radius: 50%;
+}
+
+footer {
+  background-color: antiquewhite;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header .toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .page-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+  .page-container nav {
+    width: 250px;
+    grid-column: 1;
+  }
+  .page-container nav .menu-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-container nav .menu-container .menu-title {
+    padding: 1.5rem;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .page-container nav .menu-container ul {
+    gap: 0.1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-container nav .menu-container ul li {
+    width: 100%;
+  }
+  .page-container main {
+    grid-column: 2;
+  }
+  .page-container main .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .page-container main .list .card {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+}/*# sourceMappingURL=style.css.map */
